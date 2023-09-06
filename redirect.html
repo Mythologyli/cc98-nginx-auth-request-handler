@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>跳转到认证页面</title>
+    <style>
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color: #f0f0f0;
+            padding: 2% 5%;
+            border-radius: 10px
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            line-height: 2.3
+        }
+
+        a {
+            color: #20a53a
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>需要认证</h1>
+    <h3>你正在访问的内容需要进行 CC98 认证！</h3>
+    <ul>
+        <li>如果你已连接校园网，请<a href="{{redirect_url}}">点此</a>跳转到认证页面</li>
+        <li>如果你位于校外，请先<a href="https://webvpn.zju.edu.cn" target="\_blank">点此</a>在新标签页中登录
+            WebVPN，再回到本页面<a href="{{webvpn_redirect_url}}">点此</a>跳转到 WebVPN 认证页面
+        </li>
+        <li>如遇访问问题，请联系作者</li>
+    </ul>
+</div>
+</body>
+</html>
