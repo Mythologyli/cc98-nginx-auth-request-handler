@@ -41,7 +41,7 @@ async def login(url: str):
     encoded_url = urlencode({
         "client_id": client_id,
         "response_type": "code",
-        "scope": "openid profile",
+        "scope": "openid",
         "redirect_uri": f"{session.base_url()}/oauth2/callback",
         "state": session.state,
     })
