@@ -1,4 +1,5 @@
 import asyncio
+import copy
 import datetime
 import json
 from urllib.parse import urlencode
@@ -17,7 +18,7 @@ config = json.load(open("config.json", "r", encoding="utf-8"))
 client_id = config["client_id"]
 client_secret = config["client_secret"]
 saved_sessions = load_sessions_for_file()
-sessions = saved_sessions
+sessions = copy.deepcopy(saved_sessions)
 lock = asyncio.Lock()
 
 
