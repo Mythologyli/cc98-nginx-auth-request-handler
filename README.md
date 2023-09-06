@@ -1,6 +1,6 @@
 # CC98 Nginx Auth Request 验证后端
 
-用于给 Nginx 站点添加 CC98 验证
+用于给 Nginx 站点添加 CC98 验证。此后端可以同时为多个站点提供独立验证。
 
 ## 创建应用
 
